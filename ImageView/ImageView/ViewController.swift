@@ -41,7 +41,13 @@ class ViewController: UIViewController {
         isZoom = !isZoom
     }
     
-    @IBAction func showImage(_ sender: Any) {
+    @IBAction func showImage(_ sender: UISwitch) {
+        if sender.isOn {
+            imgView.image = imgOn
+        } else {
+            imgView.image = imgOff
+        }
     }
+    
 }
 
