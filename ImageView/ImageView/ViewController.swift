@@ -8,13 +8,20 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var isZoom = false
+    var imgOn: UIImage?
+    var imgOff: UIImage?
 
     @IBOutlet var imgView: UIImageView!
     @IBOutlet var btnResize: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        imgOn = UIImage(named: "lamp_on.png")
+        imgOff = UIImage(named: "lamp_off.png")
+        
+        imgView.image = imgOn
     }
 
     @IBAction func resizeImage(_ sender: Any) {
