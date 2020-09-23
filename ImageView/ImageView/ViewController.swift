@@ -25,6 +25,20 @@ class ViewController: UIViewController {
     }
 
     @IBAction func resizeImage(_ sender: Any) {
+        let scale: CGFloat = 2.0
+        var newWidth: CGFloat, newHeight: CGFloat
+        
+        if (isZoom) {
+            newWidth = imgView.frame.width / scale
+            newHeight = imgView.frame.height / scale
+            btnResize.setTitle("확대", for: .normal)
+        } else {
+            newWidth = imgView.frame.width * scale
+            newHeight = imgView.frame.height * scale
+            btnResize.setTitle("축소", for: .normal)
+        }
+        imgView.frame.size = CGSize(width: newWidth, height: newHeight)
+        isZoom = !isZoom
     }
     
     @IBAction func showImage(_ sender: Any) {
