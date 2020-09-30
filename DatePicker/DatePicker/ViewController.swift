@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     let timeSelector: Selector = #selector(ViewController.updateTime)
     let interval = 1.0
+    let dateFormat = "yyyy-MM-dd HH:mm:ss EEE"
     var count = 0
     
     @IBOutlet var lbCurrentTime: UILabel!
@@ -32,13 +33,16 @@ class ViewController: UIViewController {
         let datePickerView = sender
         let formatter = DateFormatter()
         
-        formatter.dateFormat = "yyyy-MM-dd HH:mm EEE"
+        formatter.dateFormat = dateFormat
         lbPickerTime.text = "선택 시간 : " + formatter.string(from: datePickerView.date)
     }
     
     @objc func updateTime() {
-        lbCurrentTime.text = String(count)
-        count = count + 1
+        let date = NSDate()
+        let formatter = DateFormatter()
+        
+        formatter.dateFormat = dateFormat
+        lbCurrentTime.text = "현재 시간 : " + formatter.string(from: date as Date)
     }
 }
 
