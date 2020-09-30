@@ -8,12 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet var lbCurrentTime: UILabel!
+    @IBOutlet var lbPickerTime: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
 
+    @IBAction func changeDatePicker(_ sender: Any) {
+    }
 }
 
