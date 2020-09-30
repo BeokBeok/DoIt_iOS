@@ -17,7 +17,12 @@ class ViewController: UIViewController {
     }
 
 
-    @IBAction func changeDatePicker(_ sender: Any) {
+    @IBAction func changeDatePicker(_ sender: UIDatePicker) {
+        let datePickerView = sender
+        let formatter = DateFormatter()
+        
+        formatter.dateFormat = "yyyy-MM-dd HH:mm EEE"
+        lbPickerTime.text = "선택 시간 : " + formatter.string(from: datePickerView.date)
     }
 }
 
