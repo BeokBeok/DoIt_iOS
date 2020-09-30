@@ -8,12 +8,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let timeSelector: Selector = #selector(ViewController.updateTime)
+    let interval = 1.0
+    var count = 0
+    
     @IBOutlet var lbCurrentTime: UILabel!
     @IBOutlet var lbPickerTime: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+     
+        Timer.scheduledTimer(
+            timeInterval: interval,
+            target: self,
+            selector: timeSelector,
+            userInfo: nil,
+            repeats: true
+        )
     }
 
 
@@ -23,6 +34,11 @@ class ViewController: UIViewController {
         
         formatter.dateFormat = "yyyy-MM-dd HH:mm EEE"
         lbPickerTime.text = "선택 시간 : " + formatter.string(from: datePickerView.date)
+    }
+    
+    @objc func updateTime() {
+        lbCurrentTime.text = String(count)
+        count = count + 1
     }
 }
 
