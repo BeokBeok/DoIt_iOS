@@ -40,8 +40,20 @@ class ViewController: UIViewController, WKNavigationDelegate {
         aiv.stopAnimating()
         aiv.isHidden = true
     }
+    
+    func checkUrl(_ url: String) -> String {
+        var strUrl = url
+        let flag = strUrl.hasPrefix("http://")
+        if !flag {
+            strUrl = "http://" + strUrl
+        }
+        return strUrl
+    }
 
     @IBAction func gotoUrl(_ sender: UIButton) {
+        let myUrl = checkUrl(tfUrl.text!)
+        tfUrl.text = ""
+        loadWebPage(myUrl)
     }
     
     @IBAction func gotoSite1(_ sender: UIButton) {
