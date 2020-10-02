@@ -24,21 +24,33 @@
                                 <rect key="frame" x="28" y="816" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="켜기"/>
+                                <connections>
+                                    <action selector="onLamp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p1D-5A-vU7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJu-6F-69S">
                                 <rect key="frame" x="356" y="816" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="제거"/>
+                                <connections>
+                                    <action selector="removeLamp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JwP-Q0-oXr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c89-XH-G1j">
                                 <rect key="frame" x="192" y="816" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="끄기"/>
+                                <connections>
+                                    <action selector="offLamp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gIc-WN-ix9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="ivLamp" destination="aNc-1W-6GJ" id="ghX-hV-yHw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

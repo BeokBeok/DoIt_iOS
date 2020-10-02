@@ -9,11 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var ivLamp: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func onLamp(_ sender: UIButton) {
+    }
+    
+    @IBAction func offLamp(_ sender: UIButton) {
+    }
+    
+    @IBAction func removeLamp(_ sender: UIButton) {
+    }
 }
 
