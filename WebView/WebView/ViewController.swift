@@ -53,6 +53,8 @@ class ViewController: UIViewController, WKNavigationDelegate {
     }
     
     @IBAction func loadHtml(_ sender: UIButton) {
+        let htmlString = "<h1> HTML String </h1><p> String 변수를 이용한 웹 페이지 </p><p><a href=\"http://2sam.net\">2sam</a>으로 이동</p>"
+        wv.loadHTMLString(htmlString, baseURL: nil)
     }
     
     @IBAction func loadFile(_ sender: UIButton) {
