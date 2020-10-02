@@ -59,15 +59,19 @@ class ViewController: UIViewController, WKNavigationDelegate {
     }
     
     @IBAction func stop(_ sender: UIBarButtonItem) {
+        wv.stopLoading()
     }
     
     @IBAction func reload(_ sender: UIBarButtonItem) {
+        wv.reload()
     }
     
     @IBAction func goBack(_ sender: UIBarButtonItem) {
+        wv.goBack()
     }
     
     @IBAction func goForward(_ sender: UIBarButtonItem) {
+        wv.goForward()
     }
     
 }
