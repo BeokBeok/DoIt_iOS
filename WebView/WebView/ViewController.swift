@@ -16,7 +16,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        loadWebPage("http://2sam.net")
+    }
+    
+    func loadWebPage(_ url: String) {
+        let myUrl = URL(string: url)
+        let myRequest = URLRequest(url: myUrl!)
+        wv.load(myRequest)
     }
 
     @IBAction func gotoUrl(_ sender: UIButton) {
