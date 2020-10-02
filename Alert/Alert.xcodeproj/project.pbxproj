@@ -13,6 +13,9 @@
 		947E865325274BB80094BF9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 947E865125274BB80094BF9A /* Main.storyboard */; };
 		947E865525274BBB0094BF9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 947E865425274BBB0094BF9A /* Assets.xcassets */; };
 		947E865825274BBB0094BF9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 947E865625274BBB0094BF9A /* LaunchScreen.storyboard */; };
+		947E866325274CF70094BF9A /* lamp-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 947E866025274CF60094BF9A /* lamp-off.png */; };
+		947E866425274CF70094BF9A /* lamp-remove.png in Resources */ = {isa = PBXBuildFile; fileRef = 947E866125274CF70094BF9A /* lamp-remove.png */; };
+		947E866525274CF70094BF9A /* lamp-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 947E866225274CF70094BF9A /* lamp-on.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		947E865425274BBB0094BF9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		947E865725274BBB0094BF9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		947E865925274BBB0094BF9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		947E866025274CF60094BF9A /* lamp-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lamp-off.png"; sourceTree = "<group>"; };
+		947E866125274CF70094BF9A /* lamp-remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lamp-remove.png"; sourceTree = "<group>"; };
+		947E866225274CF70094BF9A /* lamp-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lamp-on.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 		947E864A25274BB80094BF9A /* Alert */ = {
 			isa = PBXGroup;
 			children = (
+				947E866025274CF60094BF9A /* lamp-off.png */,
+				947E866225274CF70094BF9A /* lamp-on.png */,
+				947E866125274CF70094BF9A /* lamp-remove.png */,
 				947E864B25274BB80094BF9A /* AppDelegate.swift */,
 				947E864D25274BB80094BF9A /* SceneDelegate.swift */,
 				947E864F25274BB80094BF9A /* ViewController.swift */,
@@ -125,7 +134,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				947E865825274BBB0094BF9A /* LaunchScreen.storyboard in Resources */,
+				947E866425274CF70094BF9A /* lamp-remove.png in Resources */,
+				947E866325274CF70094BF9A /* lamp-off.png in Resources */,
 				947E865525274BBB0094BF9A /* Assets.xcassets in Resources */,
+				947E866525274CF70094BF9A /* lamp-on.png in Resources */,
 				947E865325274BB80094BF9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
