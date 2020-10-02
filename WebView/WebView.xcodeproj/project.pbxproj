@@ -13,6 +13,7 @@
 		947E867B252757CB0094BF9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 947E8679252757CB0094BF9A /* Main.storyboard */; };
 		947E867D252757CD0094BF9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 947E867C252757CD0094BF9A /* Assets.xcassets */; };
 		947E8680252757CD0094BF9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 947E867E252757CD0094BF9A /* LaunchScreen.storyboard */; };
+		947E8689252760E80094BF9A /* HtmlView.html in Resources */ = {isa = PBXBuildFile; fileRef = 947E8688252760E80094BF9A /* HtmlView.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		947E867C252757CD0094BF9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		947E867F252757CD0094BF9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		947E8681252757CD0094BF9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		947E8688252760E80094BF9A /* HtmlView.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = HtmlView.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				947E867C252757CD0094BF9A /* Assets.xcassets */,
 				947E867E252757CD0094BF9A /* LaunchScreen.storyboard */,
 				947E8681252757CD0094BF9A /* Info.plist */,
+				947E8688252760E80094BF9A /* HtmlView.html */,
 			);
 			path = WebView;
 			sourceTree = "<group>";
@@ -124,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947E8689252760E80094BF9A /* HtmlView.html in Resources */,
 				947E8680252757CD0094BF9A /* LaunchScreen.storyboard in Resources */,
 				947E867D252757CD0094BF9A /* Assets.xcassets in Resources */,
 				947E867B252757CB0094BF9A /* Main.storyboard in Resources */,

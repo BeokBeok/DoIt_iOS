@@ -58,6 +58,10 @@ class ViewController: UIViewController, WKNavigationDelegate {
     }
     
     @IBAction func loadFile(_ sender: UIButton) {
+        let filePath = Bundle.main.path(forResource: "HtmlView", ofType: "html")
+        let myUrl = URL(fileURLWithPath: filePath!)
+        let myRequest = URLRequest(url: myUrl)
+        wv.load(myRequest)
     }
     
     @IBAction func stop(_ sender: UIBarButtonItem) {
