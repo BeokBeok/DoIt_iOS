@@ -24,6 +24,9 @@
                                     <segment title="폴리텍대학"/>
                                     <segment title="이지스퍼블리싱"/>
                                 </segments>
+                                <connections>
+                                    <action selector="changeLocation:" destination="BYZ-38-t0r" eventType="valueChanged" id="NOo-u0-Ufs"/>
+                                </connections>
                             </segmentedControl>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TLU-ng-I1p">
                                 <rect key="frame" x="20" y="104" width="374" height="668"/>
@@ -37,7 +40,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOY-qL-auy">
-                                <rect key="frame" x="20" y="819" width="374" height="21"/>
+                                <rect key="frame" x="20" y="819" width="369" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -47,6 +50,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="lbLocationDetail" destination="NOY-qL-auy" id="dxw-0S-uZ5"/>
+                        <outlet property="lbLocationInfo" destination="wId-tM-ha0" id="asK-ck-TYd"/>
+                        <outlet property="mapView" destination="TLU-ng-I1p" id="8Le-XA-wm3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
