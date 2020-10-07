@@ -8,15 +8,30 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet var mapView: MKMapView!
     @IBOutlet var lbLocationInfo: UILabel!
     @IBOutlet var lbLocationDetail: UILabel!
     
+    let locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        setupLocation()
+    }
+    
+    func setupLocation() {
+        lbLocationInfo.text = ""
+        lbLocationDetail.text = ""
+        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+        
+        mapView.showsUserLocation = true
     }
 
     @IBAction func changeLocation(_ sender: UISegmentedControl) {
