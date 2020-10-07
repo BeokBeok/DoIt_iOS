@@ -44,6 +44,24 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let pLocation = locations.last
         goLocation(latitude: (pLocation?.coordinate.latitude)!, longitude: (pLocation?.coordinate.longitude)!, delta: 0.01)
+        CLGeocoder().reverseGeocodeLocation(pLocation!, completionHandler: { (placemarks, error) -> Void in
+            let pm = placemarks!.first
+            let country = pm!.country
+            var address: String = country!
+            if pm!.locality != nil {
+                address += " "
+                address += pm!.locality!
+            }
+            if pm!.thoroughfare != nil {
+                address += " "
+                address += pm!.thoroughfare!
+            }
+            
+            self.lbLocationInfo.text = "현재 위치"
+            self.lbLocationDetail.text = address
+        })
+        
+        locationManager.stopUpdatingLocation()
     }
 
     @IBAction func changeLocation(_ sender: UISegmentedControl) {
