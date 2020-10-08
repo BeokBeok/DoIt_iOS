@@ -17,6 +17,7 @@
 		9460562C252F4AA8006EB691 /* lamp_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 9460562A252F4AA8006EB691 /* lamp_on.png */; };
 		9460562F252F4BC0006EB691 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9460562E252F4BC0006EB691 /* ImageViewController.swift */; };
 		94605632252F4D8E006EB691 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94605631252F4D8E006EB691 /* DatePickerViewController.swift */; };
+		94605635252F4F01006EB691 /* File.png in Resources */ = {isa = PBXBuildFile; fileRef = 94605634252F4F01006EB691 /* File.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		9460562A252F4AA8006EB691 /* lamp_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lamp_on.png; sourceTree = "<group>"; };
 		9460562E252F4BC0006EB691 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		94605631252F4D8E006EB691 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		94605634252F4F01006EB691 /* File.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = File.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		94605613252F4281006EB691 /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
+				94605634252F4F01006EB691 /* File.png */,
 				94605629252F4AA8006EB691 /* lamp_off.png */,
 				9460562A252F4AA8006EB691 /* lamp_on.png */,
 				94605614252F4281006EB691 /* AppDelegate.swift */,
@@ -139,6 +142,7 @@
 				94605621252F4282006EB691 /* LaunchScreen.storyboard in Resources */,
 				9460561E252F4282006EB691 /* Assets.xcassets in Resources */,
 				9460562C252F4AA8006EB691 /* lamp_on.png in Resources */,
+				94605635252F4F01006EB691 /* File.png in Resources */,
 				9460561C252F4281006EB691 /* Main.storyboard in Resources */,
 				9460562B252F4AA8006EB691 /* lamp_off.png in Resources */,
 			);
