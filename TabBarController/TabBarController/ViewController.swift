@@ -15,9 +15,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func moveImageView(_ sender: UIButton) {
+        tabBarController?.selectedIndex = 1
     }
     
     @IBAction func moveDatePickerView(_ sender: UIButton) {
+        tabBarController?.selectedIndex = 2
     }
     
 }
