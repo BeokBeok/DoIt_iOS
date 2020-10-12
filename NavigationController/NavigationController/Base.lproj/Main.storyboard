@@ -11,13 +11,13 @@
         <!--수정화면-->
         <scene sceneID="AO5-d8-rKa">
             <objects>
-                <viewController id="LLf-9Z-lNZ" sceneMemberID="viewController">
+                <viewController id="LLf-9Z-lNZ" customClass="EditViewController" customModule="NavigationController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wPv-lj-BjY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OB-6h-PIF">
-                                <rect key="frame" x="20" y="109" width="42" height="21"/>
+                                <rect key="frame" x="20" y="109" width="296" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -27,16 +27,22 @@
                                 <rect key="frame" x="364" y="104" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="완료"/>
+                                <connections>
+                                    <action selector="done:" destination="LLf-9Z-lNZ" eventType="touchUpInside" id="Qnl-fl-4Ud"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vye-x6-6K3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="수정화면" id="5SL-XY-fo0"/>
+                    <connections>
+                        <outlet property="lbWay" destination="0OB-6h-PIF" id="4SA-yQ-AsK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A2p-TY-7DH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1900" y="129"/>
+            <point key="canvasLocation" x="1900.0000000000002" y="128.57142857142856"/>
         </scene>
         <!--메인화면-->
         <scene sceneID="tne-QT-ifu">
