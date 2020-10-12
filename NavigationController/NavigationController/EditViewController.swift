@@ -9,6 +9,7 @@ import UIKit
 
 protocol EditDelegate {
     func didMessageEditDone(_ controller: EditViewController, message: String)
+    func didImageOnOffDone(_ controller: EditViewController, isOn: Bool)
 }
 
 class EditViewController: UIViewController {
@@ -16,24 +17,31 @@ class EditViewController: UIViewController {
     var textWayValue: String = ""
     var textMessage: String = ""
     var delegate: EditDelegate?
+    var isOn = false
     
     @IBOutlet var lbWay: UILabel!
     @IBOutlet var tfMessage: UITextField!
+    @IBOutlet var swOn: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         lbWay.text = textWayValue
         tfMessage.text = textMessage
+        swOn.isOn = isOn
     }
     
     @IBAction func done(_ sender: UIButton) {
         if delegate != nil {
             delegate?.didMessageEditDone(self, message: tfMessage.text!)
+            delegate?.didImageOnOffDone(self, isOn: isOn)
         }
         _ = navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func changeImageOnOff(_ sender: UISwitch) {
+        isOn = sender.isOn
+    }
     /*
     // MARK: - Navigation
 
