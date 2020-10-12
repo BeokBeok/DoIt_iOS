@@ -8,6 +8,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--수정화면-->
+        <scene sceneID="AO5-d8-rKa">
+            <objects>
+                <viewController id="LLf-9Z-lNZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wPv-lj-BjY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Vye-x6-6K3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="수정화면" id="5SL-XY-fo0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A2p-TY-7DH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="129"/>
+        </scene>
         <!--메인화면-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -18,7 +34,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="메인화면" id="txH-zr-WBd"/>
+                    <navigationItem key="navigationItem" title="메인화면" id="txH-zr-WBd">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="hF7-VO-ciK">
+                            <connections>
+                                <segue destination="LLf-9Z-lNZ" kind="show" id="4DU-b4-dvC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
