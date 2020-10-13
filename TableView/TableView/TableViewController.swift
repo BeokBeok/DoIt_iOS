@@ -65,12 +65,16 @@ class TableViewController: UITableViewController {
         }    
     }
 
-    /*
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
+        let targetRow = (fromIndexPath as NSIndexPath).row
+        let itemToMove = items[targetRow]
+        let itemImageToMove = itemsImageFile[targetRow]
+        items.remove(at: targetRow)
+        itemsImageFile.remove(at: targetRow)
+        items.insert(itemToMove, at: targetRow)
+        itemsImageFile.insert(itemImageToMove, at: targetRow)
     }
-    */
 
     /*
     // Override to support conditional rearranging of the table view.
