@@ -9,6 +9,8 @@ import UIKit
 
 class AddViewController: UIViewController {
 
+    @IBOutlet var tfAddItem: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,4 +28,7 @@ class AddViewController: UIViewController {
     }
     */
 
+    @IBAction func addItem(_ sender: UIButton) {
+    }
+    
 }

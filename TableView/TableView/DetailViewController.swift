@@ -9,6 +9,8 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet var lbItem: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

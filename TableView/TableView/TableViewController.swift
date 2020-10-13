@@ -9,6 +9,8 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
+    @IBOutlet var tavList: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
