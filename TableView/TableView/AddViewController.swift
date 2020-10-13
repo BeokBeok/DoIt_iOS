@@ -18,6 +18,13 @@ class AddViewController: UIViewController {
     }
     
 
+    @IBAction func addItem(_ sender: UIButton) {
+        items.append(tfAddItem.text!)
+        itemsImageFile.append("clock.png")
+        tfAddItem.text = ""
+        _ = navigationController?.popViewController(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -27,8 +34,4 @@ class AddViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-    @IBAction func addItem(_ sender: UIButton) {
-    }
-    
 }

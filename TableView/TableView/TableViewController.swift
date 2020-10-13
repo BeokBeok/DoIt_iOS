@@ -7,11 +7,11 @@
 
 import UIKit
 
+var items = ["책 구매", "철수와 약속", "스터디 준비하기"]
+var itemsImageFile = ["cart.png", "clock.png", "pencil.png"]
+
 class TableViewController: UITableViewController {
 
-    var items = ["책 구매", "철수와 약속", "스터디 준비하기"]
-    var itemsImageFile = ["cart.png", "clock.png", "pencil.png"]
-    
     @IBOutlet var tavList: UITableView!
     
     override func viewDidLoad() {
@@ -22,6 +22,10 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         self.navigationItem.leftBarButtonItem = self.editButtonItem
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tavList.reloadData()
     }
 
     // MARK: - Table view data source
