@@ -108,6 +108,11 @@
                             <constraint firstItem="wdc-Kk-yeq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gMj-gl-17h"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lbMessage" destination="ucH-GF-aAY" id="XNf-ID-cd7"/>
+                        <outlet property="lbTapCount" destination="vqW-xf-N2G" id="vH3-td-PKk"/>
+                        <outlet property="lbTouchCount" destination="Xgu-D8-m8i" id="ikX-gz-gXy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
