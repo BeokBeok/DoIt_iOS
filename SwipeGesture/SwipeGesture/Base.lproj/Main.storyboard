@@ -59,6 +59,12 @@
                             <constraint firstItem="KwU-mX-GuJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nij-rT-ZVm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imgDown" destination="Q7k-UM-tp8" id="0o8-up-iK4"/>
+                        <outlet property="imgLeft" destination="DdY-Kg-r5T" id="DLb-H5-aFc"/>
+                        <outlet property="imgRight" destination="Unz-1L-OjG" id="90Q-B3-bPs"/>
+                        <outlet property="imgUp" destination="k1j-yz-Jec" id="wf1-d1-8ZN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
