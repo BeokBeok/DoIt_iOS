@@ -16,24 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pinch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Za-nY-pCm">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="06.png" translatesAutoresizingMaskIntoConstraints="NO" id="cGB-7k-4Wd">
                                 <rect key="frame" x="20" y="44" width="374" height="818"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Za-nY-pCm" secondAttribute="bottom" id="B8c-5Y-shs"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Za-nY-pCm" secondAttribute="trailing" constant="20" id="Igi-IS-XZq"/>
-                            <constraint firstItem="2Za-nY-pCm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NlV-Aw-wY0"/>
-                            <constraint firstItem="2Za-nY-pCm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cfh-ep-s3l"/>
+                            <constraint firstItem="cGB-7k-4Wd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8V8-aL-cev"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cGB-7k-4Wd" secondAttribute="bottom" id="Lvj-J9-y1q"/>
+                            <constraint firstItem="cGB-7k-4Wd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YRe-hX-pzJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cGB-7k-4Wd" secondAttribute="trailing" constant="20" id="bJP-1N-X6J"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="lbPinch" destination="2Za-nY-pCm" id="ezJ-Zu-9PD"/>
+                        <outlet property="ivPinch" destination="cGB-7k-4Wd" id="7aE-B6-gsR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -42,6 +39,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="06.png" width="1686" height="2448"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
